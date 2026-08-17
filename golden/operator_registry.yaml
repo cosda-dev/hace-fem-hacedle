@@ -1,0 +1,59 @@
+# B1: Operator Registry Truth - Fingerprint cho mỗi operator
+# Mục đích: drift detection + reproducibility
+
+operators:
+  rmsnorm:
+    source_file: "brain/src/op/rmsnorm.rs"
+    function: "rmsnorm"
+    input_shape: [896]
+    output_shape: [896]
+    eps: 1e-6
+    sha256: "PENDING_RUNTIME"
+    
+  rope:
+    source_file: "brain/src/op/rope.rs"
+    function: "apply_rope_pairwise"
+    input_shape: [n_heads * head_dim]
+    output_shape: [n_heads * head_dim]
+    theta: 1000000.0
+    sha256: "PENDING_RUNTIME"
+    
+  attention_score:
+    source_file: "brain/src/block/attention.rs"
+    function: "compute_attention_scores"
+    input_shapes: [q: [14*64], k: [2*64]]
+    output_shape: [14*14]  # attention scores
+    head_dim: 64
+    n_head: 14
+    n_head_kv: 2
+    sha256: "PENDING_RUNTIME"
+    
+  softmax:
+    source_file: "brain/src/block/attention.rs"
+    function: "softmax"
+    input_shape: [n_heads * n_heads]
+    output_shape: [n_heads * n_heads]
+    sha256: "PENDING_RUNTIME"
+    
+  silu:
+    source_file: "brain/src/op/silu.rs"
+    function: "silu"
+    input_shape: [ffn_dim]
+    output_shape: [ffn_dim]
+    sha256: "PENDING_RUNTIME"
+    
+  matmul_qkv:
+    source_file: "brain/src/op/matmul.rs"
+    function: "qkv_projection"
+    input_shape: [hidden]
+    output_shape: [projection_dim]
+    sha256: "PENDING_RUNTIME"
+
+# Runtime fingerprint format
+runtime_fingerprint_format:
+  - operator
+  - input_sha256
+  - output_sha256
+  - shape
+  - dtype
+  - timestamp

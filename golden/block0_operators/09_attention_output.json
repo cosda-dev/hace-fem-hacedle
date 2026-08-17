@@ -1,0 +1,11 @@
+{
+  "operator_id": "09_attention_output",
+  "layer_id": 0,
+  "tensor_shape": [
+    896
+  ],
+  "dtype": "f32",
+  "min": -0.08889105916023254,
+  "max": 0.12167346477508545,
+  "mean": 0.003025251207873225
+}

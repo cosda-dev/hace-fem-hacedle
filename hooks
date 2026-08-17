@@ -1,0 +1,21 @@
+use super::{Hook, HookContext, HookResult};
+
+pub struct AfterReasonHook {
+    name: &'static str,
+}
+
+impl AfterReasonHook {
+    pub fn new(name: &'static str) -> Self {
+        Self { name }
+    }
+}
+
+impl Hook for AfterReasonHook {
+    fn name(&self) -> &'static str {
+        self.name
+    }
+
+    fn priority(&self) -> u32 {
+        50
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "operator_id": "12_ffn_norm",
+  "layer_id": 0,
+  "tensor_shape": [
+    896
+  ],
+  "dtype": "f32",
+  "sha256": "d40d9406cc69e2a9c2fa5a23b728961abce155a307932ea7addafed36f59b0fb",
+  "min": -7.809634685516357,
+  "max": 4.8705339431762695,
+  "mean": 0.010629837401211262
+}

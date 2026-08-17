@@ -1,0 +1,78 @@
+{
+  "format_version": "1.0",
+  "schema": {
+    "block0_input": {
+      "description": "Input hidden state before block0",
+      "shape": ["seq_len", 896],
+      "dtype": "f32",
+      "file": "block0_input.bin"
+    },
+    "block0_attn_norm": {
+      "description": "After attention RMSNorm",
+      "shape": [896],
+      "dtype": "f32",
+      "file": "block0_attn_norm.bin"
+    },
+    "block0_q": {
+      "description": "Q projection output",
+      "shape": ["seq_len", 14, 64],
+      "dtype": "f32",
+      "file": "block0_q.bin"
+    },
+    "block0_k": {
+      "description": "K projection output (GQA: n_head_kv=2)",
+      "shape": ["seq_len", 2, 64],
+      "dtype": "f32",
+      "file": "block0_k.bin"
+    },
+    "block0_v": {
+      "description": "V projection output (GQA: n_head_kv=2)",
+      "shape": ["seq_len", 2, 64],
+      "dtype": "f32",
+      "file": "block0_v.bin"
+    },
+    "block0_q_after_rope": {
+      "description": "Q after RoPE",
+      "shape": ["seq_len", 14, 64],
+      "dtype": "f32",
+      "file": "block0_q_after_rope.bin"
+    },
+    "block0_k_after_rope": {
+      "description": "K after RoPE",
+      "shape": ["seq_len", 2, 64],
+      "dtype": "f32",
+      "file": "block0_k_after_rope.bin"
+    },
+    "block0_attn_scores": {
+      "description": "Attention scores QK^T",
+      "shape": ["seq_len", 14],
+      "dtype": "f32",
+      "file": "block0_attn_scores.bin"
+    },
+    "block0_attn_probs": {
+      "description": "Attention probabilities after softmax",
+      "shape": ["seq_len", 14],
+      "dtype": "f32",
+      "file": "block0_attn_probs.bin"
+    },
+    "block0_attn_out": {
+      "description": "Attention output",
+      "shape": [896],
+      "dtype": "f32",
+      "file": "block0_attn_out.bin"
+    },
+    "block0_output": {
+      "description": "Block0 output (before next block)",
+      "shape": [896],
+      "dtype": "f32",
+      "file": "block0_output.bin"
+    }
+  },
+  "metadata_fields": {
+    "model": "qwen25-0.5b",
+    "tensor_name": "blk.0.*",
+    "shape": "[...]",
+    "dtype": "f32",
+    "sha256": "..."
+  }
+}

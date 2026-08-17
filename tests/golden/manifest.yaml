@@ -1,0 +1,7 @@
+model: Qwen2.5-Coder-7B-Q4_K_M
+tensor: token_embd.weight
+block: 0
+type: q4_K
+expected_len: 256
+source: gguf.dequantize Python package (v0.19.0)
+validation: PASS (custom implementation matches gguf package)

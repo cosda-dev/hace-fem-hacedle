@@ -1,0 +1,86 @@
+---
+header:
+  id: AIL://specs.cge.skb-format.v1
+  intent: EFC_DEFINITION
+  status: DRAFT_SEALED
+  authority: CGE
+  timestamp: "2026-05-31T10:07:21Z"
+  locale: vi-85
+  classification: INTERNAL_ALLIANCE
+  audience: CRD, CTO, Alliance_Cogen
+  scope: hace-fem-hacedle/x/loader/skb
+  version: "1.0.0"
+---
+
+# SKB Format Specification v1.0
+
+## I. SKB ANATOMY
+
+```yaml
+skb_structure:
+  header:
+    magic: "SKB1" (4 bytes)
+    version: "1.0.0"
+    
+  authority:
+    producer: ActorIdentity
+    rights: [Read, Execute, Extend]
+    signatures: [Ed25519, AES]
+    
+  manifest:
+    title: string
+    domain: string
+    dependencies: [SKB URIs]
+    
+  semantic:
+    nodes: [FAN URI nodes]
+    edges: [Relation edges]
+    
+  memory:
+    kv_cache: offset, size
+    token_cache: offset, size
+    embedding_cache: offset, size
+    
+  payload:
+    type: [gguf, onnx, mlx, custom]
+    offset: u64
+    size: u64
+    
+  ports:
+    - id: HP://port.id
+      input: [string]
+      output: [string]
+      
+  policy:
+    allow: [string]
+    deny: [string]
+    audit: bool
+```
+
+## II. EFC DEFINITIONS
+
+### EFC.Hacedle.Loader.SKB
+
+```rust
+pub trait SkbMountNep {
+    fn verify(path: &Path) -> Result<SealInfo>;
+    fn mmap(path: &Path) -> Result<MemoryProjection>;
+    fn semantic_graph(proj: &MemoryProjection) -> Result<GraphView>;
+    fn payload(proj: &MemoryProjection) -> Result<PayloadView>;
+}
+```
+
+### EFA Mapping
+
+```rust
+pub trait SkbDispatchNep {
+    fn select_executor(payload: PayloadView) -> ExecutorId;
+    fn dispatch(payload: PayloadView) -> Result<ExecutionHandle>;
+}
+```
+
+## III. RACIN Integration
+
+- Memory-mapped via mmap()
+- Zero-copy projection to Arena
+- Authority gate enforced on access

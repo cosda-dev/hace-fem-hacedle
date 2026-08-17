@@ -1,0 +1,17 @@
+{
+  "tensor": "blk.0.attn_v.weight",
+  "quant": "Q8_0",
+  "raw_bytes_per_block": 34,
+  "block_size": 32,
+  "shape": [
+    896,
+    128
+  ],
+  "total_elements": 114688,
+  "reference_stats": {
+    "min": -0.09471321105957031,
+    "max": 0.12111663818359375,
+    "mean": -8.02284739620518e-06
+  },
+  "status": "extracted"
+}

@@ -1,0 +1,10 @@
+pub mod add;
+pub mod matmul;
+pub mod rmsnorm;
+pub mod rope;
+pub mod block;
+pub mod model_spec;
+pub mod activation_dump;
+pub mod tensor_fingerprint;
+pub mod operator_registry;
+pub mod gqa_validation;

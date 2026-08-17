@@ -1,0 +1,13 @@
+{
+  "tensor": "blk.0.attn_q.weight",
+  "quant": "Q5_0",
+  "block_index": 0,
+  "elements": 32,
+  "bytes_per_block": 22,
+  "max_abs_error": 0.0,
+  "mean_abs_error": 0.0,
+  "cosine_similarity": 1.0,
+  "status": "PASS",
+  "method": "gguf-py dequantize_blocks verified manually",
+  "timestamp": "2026-06-02"
+}

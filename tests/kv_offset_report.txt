@@ -1,0 +1,43 @@
+GGUF KV Offset Report
+path=D:\host\llama-models\Qwen2.5-Coder-7B-Instruct-Q4_K_M.gguf
+version=3
+kv_count=38
+
+KV[0] offset=24 key=general.architecture type=string next=69
+KV[1] offset=69 key=general.type type=string next=106
+KV[2] offset=106 key=general.name type=string next=163
+KV[3] offset=163 key=general.finetune type=string next=207
+KV[4] offset=207 key=general.basename type=string next=256
+KV[5] offset=256 key=general.size_label type=string next=296
+KV[6] offset=296 key=general.license type=string next=341
+KV[7] offset=341 key=general.license.link type=string next=452
+KV[8] offset=452 key=general.base_model.count type=uint32 next=492
+KV[9] offset=492 key=general.base_model.0.name type=string next=553
+KV[10] offset=553 key=general.base_model.0.organization type=string next=610
+KV[11] offset=610 key=general.base_model.0.repo_url type=string next=703
+KV[12] offset=703 key=general.tags type=array next=832
+KV[13] offset=832 key=general.languages type=array next=883
+KV[14] offset=883 key=qwen2.block_count type=uint32 next=916
+KV[15] offset=916 key=qwen2.context_length type=uint32 next=952
+KV[16] offset=952 key=qwen2.embedding_length type=uint32 next=990
+KV[17] offset=990 key=qwen2.feed_forward_length type=uint32 next=1031
+KV[18] offset=1031 key=qwen2.attention.head_count type=uint32 next=1073
+KV[19] offset=1073 key=qwen2.attention.head_count_kv type=uint32 next=1118
+KV[20] offset=1118 key=qwen2.rope.freq_base type=float32 next=1154
+KV[21] offset=1154 key=qwen2.attention.layer_norm_rms_epsilon type=float32 next=1208
+KV[22] offset=1208 key=general.file_type type=uint32 next=1241
+KV[23] offset=1241 key=tokenizer.ggml.model type=string next=1285
+KV[24] offset=1285 key=tokenizer.ggml.pre type=string next=1328
+KV[25] offset=1328 key=tokenizer.ggml.tokens type=array next=2592051
+KV[26] offset=2592051 key=tokenizer.ggml.token_type type=array next=3200356
+KV[27] offset=3200356 key=tokenizer.ggml.merges type=array next=5931949
+KV[28] offset=5931949 key=tokenizer.ggml.eos_token_id type=uint32 next=5931992
+KV[29] offset=5931992 key=tokenizer.ggml.padding_token_id type=uint32 next=5932039
+KV[30] offset=5932039 key=tokenizer.ggml.bos_token_id type=uint32 next=5932082
+KV[31] offset=5932082 key=tokenizer.ggml.add_bos_token type=bool next=5932123
+KV[32] offset=5932123 key=tokenizer.chat_template type=string next=5934673
+KV[33] offset=5934673 key=general.quantization_version type=uint32 next=5934717
+KV[34] offset=5934717 key=quantize.imatrix.file type=string next=5934834
+KV[35] offset=5934834 key=quantize.imatrix.dataset type=string next=5934914
+KV[36] offset=5934914 key=quantize.imatrix.entries_count type=int32 next=5934960
+KV[37] offset=5934960 key=quantize.imatrix.chunks_count type=int32 next=5935005

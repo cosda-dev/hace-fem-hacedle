@@ -1,0 +1,15 @@
+{
+  "tensor": "blk_0_attn_v_weight",
+  "quant": "Q8_0",
+  "elements": 114688,
+  "shape": [
+    896,
+    128
+  ],
+  "reference_stats": {
+    "min": -0.09471321105957031,
+    "max": 0.12111663818359375,
+    "mean": -8.022848695483325e-06
+  },
+  "status": "reference_loaded"
+}

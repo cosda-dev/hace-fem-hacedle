@@ -1,0 +1,59 @@
+[package]
+name = "hace-fem-hacedle"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[features]
+default = ["std"]
+alloc = []
+std = ["alloc", "dep:async-trait"]
+simd = []
+
+[dependencies]
+async-trait = { version = "0.1", optional = true }
+serde = { version = "1", features = ["derive"], optional = true }
+serde_json = { version = "1", optional = true }
+# tokenizers disabled on Windows without gcc - re-enable for full tokenizer support
+# tokenizers = { version = "0.15", optional = true }
+
+# Unified RNG — standard rand for token sampling, weight init, dropout
+hace-uni-rand = { path = "../../uni/rand", optional = true }
+
+[lib]
+name = "hace_fem_hacedle"
+path = "src/lib.rs"
+crate-type = ["lib"]
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "hacedle_bench"
+harness = false
+required-features = ["std"]
+
+[[bin]]
+name = "inference_probe"
+path = "src/bin/inference_probe.rs"
+required-features = ["std"]
+
+[[bin]]
+name = "tensor_probe"
+path = "src/bin/tensor_probe.rs"
+required-features = ["std"]
+
+[[bin]]
+name = "embedding_probe"
+path = "src/bin/embedding_probe.rs"
+required-features = ["std"]
+
+[[bin]]
+name = "logits_probe"
+path = "src/bin/logits_probe.rs"
+required-features = ["std"]
+
+[[bin]]
+name = "first_token"
+path = "src/bin/first_token.rs"
+required-features = ["std"]

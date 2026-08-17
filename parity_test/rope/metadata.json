@@ -1,0 +1,14 @@
+{
+  "hidden_size": 896,
+  "n_head": 14,
+  "head_dim": 64,
+  "theta": 1000000.0,
+  "positions_tested": [
+    0,
+    1,
+    128,
+    1024
+  ],
+  "inv_freq_first": 1.0,
+  "inv_freq_last": 1.539926526059492e-06
+}

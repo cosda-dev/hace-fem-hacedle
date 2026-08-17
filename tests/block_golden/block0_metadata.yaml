@@ -1,0 +1,7 @@
+blk.0:
+  attn_q: found
+  attn_k: found
+  attn_v: found
+  ffn_up: found
+  ffn_gate: found
+  ffn_down: found

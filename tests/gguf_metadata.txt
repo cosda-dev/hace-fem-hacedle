@@ -1,0 +1,5 @@
+usage: python.exe C:\Users\84334\AppData\Roaming\Python\Python314\Scripts\gguf-dump
+       [-h] [--no-tensors] [--json] [--json-array] [--data-offset]
+       [--data-alignment] [--markdown] [--verbose]
+       model
+python.exe C:\Users\84334\AppData\Roaming\Python\Python314\Scripts\gguf-dump: error: unrecognized arguments: --metadata

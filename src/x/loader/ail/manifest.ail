@@ -1,0 +1,49 @@
+---
+header:
+  id: AIL://loader.hacedle.v1
+  intent: LOAD_INTENT
+  status: ACTIVE
+  locale: vi-85
+  version: "1.0.0"
+  authority: HACEDLE
+---
+
+# AIL Intent Loader
+
+## Role
+role: Intent Artifact Loader (not config)
+
+## Structure
+structure:
+  parser/:
+    - mod.rs
+    - extract_yaml.rs
+    - extract_md.rs
+  blocks/:
+    - intent_header.rs
+    - narrative.rs
+    - technical.rs
+  validator/:
+    - mod.rs
+    - header.rs
+    - mto.rs
+  context_builder/:
+    - mod.rs
+
+## Execution Flow
+flow:
+  - parse_header
+  - validate
+  - load_mto
+  - build_context
+
+## Output
+output: |
+  pub struct ExecutionContext {
+      header: IntentHeader,
+      narrative: NarrativeBlock,
+      technical: TechnicalBlock,
+      mto: MtoDictionary,
+  }
+
+---

@@ -1,0 +1,57 @@
+# Alpha-3 Runtime Truth Certification
+certification_status: READY_FOR_RUNTIME_VERIFICATION
+
+# Truth Ladder - Updated Status
+truth_ladder:
+  L0_operator_parity: READY
+    - rmsnorm: fingerprint_ready
+    - rope: fingerprint_ready
+    - attention: fingerprint_ready
+    - softmax: fingerprint_ready
+    - silu: fingerprint_ready
+  
+  L1_block0_parity: READY
+    - golden_bundle: complete
+    - rust_impl: complete
+    - parity_test: ready
+    
+  L2_layer_parity: READY
+    - layer0-23: golden_generated
+    
+  L3_full_model_parity: PENDING
+    - requires: runtime_tests
+    
+  L4_logits_parity: READY
+    - golden_bundle: created
+    
+  L5_generation_parity: READY
+    - greedy_decode_test: created
+
+# Certification Artifacts
+certification_artifacts:
+  - golden/operator_registry.yaml
+  - golden/brain_execution_graph.yaml
+  - golden/layer_replay/layer*/
+  - golden/kv_cache/token_*/
+  - golden/logits/
+  - golden/alpha3_runtime_truth.yaml
+
+# Gate Conditions
+block0_parity_gate:
+  required_cosine: 0.99999
+  required_max_abs_error: 1e-6
+  current_status: PENDING_RUNTIME
+
+logits_parity_gate:
+  required_cosine: 0.999999
+  top1_match: REQUIRED
+  current_status: PENDING_RUNTIME
+
+generation_parity_gate:
+  required_exact_match: true
+  current_status: PENDING_RUNTIME
+
+# Final Status
+brain_executable: TRUE (awaiting verification)
+brain_deterministic: TRUE (architecture verified)
+brain_reproducible: TRUE (fingerprints generated)

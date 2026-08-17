@@ -1,0 +1,111 @@
+---
+header:
+  id: FEM://brain.master.runtime.hacedle.v1
+  intent: PROVIDE_SOVEREIGN_EXECUTION
+  status: ACTIVE
+  locale: vi-85
+  version: "0.3.0"
+  authority: CONA
+  updated_at: "2026-05-31"
+---
+
+# Hacedle Manifest - Brain Master Runtime (E5)
+
+## Entity
+entity:
+  name: Hacedle
+  class: BrainMasterRuntime
+  type: SovereignExecutionLayer
+
+## Definition
+definition:
+  role:
+    - projection
+    - routing
+    - governance
+    - authority
+    - orchestration
+
+  vendor_neutral: true
+
+  ownership:
+    - SKB
+    - RCB
+    - MMB
+
+## Architecture
+architecture:
+  core_layers:
+    - projection
+    - authority
+    - routing
+    - rac
+    - memory
+    - loader
+    - extension_registry
+
+## Extension Layer
+x/:
+  bridge/:
+    - candle
+    - llama
+    - onnx
+    - mlx
+    - vllm
+
+  adapter/:
+    - gguf
+    - safetensor
+    - onnx
+    - mmb
+
+  loader/:
+    - skb
+    - rcb
+    - mmb
+    - dim
+    - profile
+    - snapshot
+
+  service/:
+    - reasoning
+    - planning
+    - knowledge
+    - memory
+    - consensus
+
+  fixer/:
+    - hallucination
+    - policy
+    - authority
+    - citation
+    - output
+
+## BrainRuntime Contract
+contract: |
+  pub trait BrainRuntime {
+      fn mount_projection();
+      fn mount_rules();
+      fn mount_models();
+      fn select_provider();
+      fn reason();
+      fn stream();
+  }
+
+  Aura chỉ biết: dyn BrainRuntime
+  Aura không biết: Candle | Llama | ONNX | MLX | vLLM
+
+## SKB Position
+skb_chain:
+  aura_soul
+    - BrainRuntime
+  hacedle
+    - Provider Manager
+    - SKB Loader
+  providers
+    - candle/native
+    - llama/blackbox
+    - onnx/embedded
+
+---
+**Status:** E5 BRAIN MASTER RUNTIME

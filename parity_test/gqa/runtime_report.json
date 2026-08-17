@@ -1,0 +1,17 @@
+{
+  "n_head": 14,
+  "n_head_kv": 2,
+  "repeat_factor": 7,
+  "k_raw_shape": [
+    2,
+    1,
+    64
+  ],
+  "k_expanded_shape": [
+    14,
+    1,
+    64
+  ],
+  "expansion_verified": true,
+  "method": "repeat_kv(activations, 14, 2)"
+}

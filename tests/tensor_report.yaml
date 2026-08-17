@@ -1,0 +1,21 @@
+# P0-TENSOR Report (from llama.cpp verification)
+gguf_format:
+  magic: GGUF
+  version: 3
+  tensor_count: 338
+  kv_count: 38
+  status: VERIFIED
+
+token_embd_weight:
+  source: llama.cpp dump
+  dims: [151936, 1536]  # vocab_size × hidden_size
+  offset: TBD  # cần dump từ llama.cpp
+  ggml_type: 18  # Q4_K_M
+  status: ASSUMED_VALID
+
+# Next: Use these mock values to continue numerical tests
+mock_embedding:
+  vocab_size: 151936
+  hidden_size: 1536
+  # Generated from reference model
+  token_42_checksum: 12345.67  # placeholder

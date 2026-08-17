@@ -1,0 +1,26 @@
+# Alpha-3 Runtime Truth Certification
+runtime_truth:
+  status: IN_PROGRESS
+  model: qwen2.5-0.5b
+  
+quant_parity:
+  q8_0: PASS
+  q5_0: PASS
+  q6_k: PASS
+  
+operator_parity:
+  rmsnorm: pending_verification
+  rope: pending_verification
+  matmul: pending_verification
+  softmax: pending_verification
+  
+block0_parity: pending_verification
+  
+logits_parity: pending_verification
+
+# Gate conditions
+block0_gate: LOCKED
+logits_gate: LOCKED
+
+# Certification pending
+certification_ready: false

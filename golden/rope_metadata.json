@@ -1,0 +1,3 @@
+{
+  "qwen2.rope.freq_base": "ReaderField(offset=1040, name='qwen2.rope.freq_base', parts=[memmap([20], dtype=uint64), memmap([113, 119, 101, 110,  50,  46, 114, 111, 112, 101,  46, 102, 114,\n        101, 113,  95,  98,  97, 115, 101], dtype=uint8), memmap([6], dtype=uint32), memmap([1.e+06], dtype=float32)], data=[3], types=[<GGUFValueType.FLOAT32: 6>])"
+}

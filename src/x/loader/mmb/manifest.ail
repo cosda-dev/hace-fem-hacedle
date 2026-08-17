@@ -1,0 +1,57 @@
+---
+header:
+  id: AIL://specs.cge.mmb-loader.v1
+  intent: EFC_DEFINITION
+  status: DRAFT_FOR_REVIEW
+  authority: CGE
+  version: "1.0.0"
+---
+
+# MMB Loader Specification
+
+## Role
+role: Reality Ingestion Layer
+responsibility:
+  - load
+  - parse
+  - normalize
+  - project
+
+## Data Types
+types:
+  tier_1_structured:
+    - csv
+    - xlsx
+    - json
+    - yaml
+    - parquet
+  tier_2_semi:
+    - html
+    - markdown
+    - pdf
+    - docx
+  tier_3_image:
+    - jpg
+    - png
+    - webp
+  tier_4_audio:
+    - wav
+    - mp3
+    - flac
+  tier_5_video:
+    - mp4
+    - mkv
+  tier_6_sensor:
+    - lidar
+    - radar
+    - gps
+
+## Execution Flow
+flow:
+  - detect_format
+  - route_provider
+  - normalize
+  - project_tensor
+  - RACIN_arena
+
+---

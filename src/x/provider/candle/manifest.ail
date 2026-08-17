@@ -1,0 +1,44 @@
+---
+header:
+  id: PCP://provider.candle.v1
+  intent: PROVIDE_NATIVE_INFERENCE
+  status: ACTIVE
+  locale: vi-85
+  version: "1.0.0"
+  authority: HACEDLE
+---
+
+# Candle Provider - Builtin Native Provider
+
+## Provider
+provider:
+  type: Native Provider
+  class: Builtin
+  priority: 100
+
+## Engine Components
+engine:
+  - tensor: Native Rust tensor ops
+  - attention: Attention mechanism
+  - sampler: Sampling algorithms
+  - embed: Embedding engine
+  - inference: Inference engine
+  - scheduler: Task scheduler
+
+## Capabilities
+capabilities:
+  - infer
+  - stream
+  - embed
+  - tokenize
+
+## Formats
+supported_formats:
+  - gguf
+  - safetensor
+
+## Default Path
+default: true
+
+---
+**Status:** BUILTIN PROVIDER (Trusted Native)

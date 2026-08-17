@@ -1,0 +1,22 @@
+{
+  "model": "Qwen2.5-0.5B",
+  "block": 0,
+  "operators": [
+    "01_input",
+    "02_attn_norm_weight",
+    "03_post_rmsnorm",
+    "04_q_proj",
+    "05_k_proj",
+    "06_v_proj",
+    "07_rope_q",
+    "08_rope_k",
+    "09_attention_scores",
+    "10_softmax",
+    "11_attn_output",
+    "12_o_proj",
+    "13_residual",
+    "14_ffn_norm",
+    "15_ffn_gate_up_down",
+    "16_ffn_output"
+  ]
+}

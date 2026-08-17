@@ -1,0 +1,46 @@
+# D3: Drift Budget Registry - Single source of truth cho thresholds
+# Không hardcode thresholds trong test
+
+drift_budget:
+  operators:
+    rmsnorm:
+      max_abs_error_threshold: 1e-6
+      mean_abs_error_threshold: 1e-7
+      cosine_threshold: 0.999999
+      
+    rope:
+      max_abs_error_threshold: 1e-6
+      mean_abs_error_threshold: 1e-7
+      cosine_threshold: 0.999999
+      
+    attention_score:
+      max_abs_error_threshold: 1e-5
+      cosine_threshold: 0.99999
+      
+    softmax:
+      sum_deviation_threshold: 1e-6
+      entropy_threshold: 2.0  # Information entropy
+      
+    silu:
+      max_abs_error_threshold: 1e-6
+      cosine_threshold: 0.999999
+      
+    matmul_qkv:
+      max_abs_error_threshold: 1e-5
+      cosine_threshold: 0.99999
+      
+    residual:
+      max_abs_error_threshold: 1e-6
+
+  layers:
+    max_abs_error_threshold: 1e-5
+    cosine_threshold: 0.99999
+    
+  kv_cache:
+    hash_match_required: true
+    shape_match_required: true
+    
+  logits:
+    cosine_threshold: 0.999999
+    top1_match_required: true
+    top5_match_required: true

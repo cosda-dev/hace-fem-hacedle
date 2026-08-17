@@ -1,0 +1,14 @@
+block: 0
+input: q4k_block_000.bin
+reference: q4k_block_000_f32_gguf.bin (gguf package v0.19.0)
+output: q4k_block_000_f32.bin (Python custom implementation)
+max_abs_error: 0.0000000000
+mean_abs_error: 0.0000000000
+rmse: 0.0000000000
+cosine_similarity: 1.000000
+status: PASS
+rust_parity: PENDING
+notes: |
+  - gguf.dequantize() used as official reference
+  - Custom Python implementation matches gguf output exactly
+  - Rust q4k.rs runtime parity test needed to complete Alpha-2

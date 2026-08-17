@@ -1,0 +1,43 @@
+---
+header:
+  id: AIL://specs.cge.gguf-loader.v1
+  intent: EFC_DEFINITION
+  status: APPROVED_FOR_FORGE
+  authority: CGE
+  timestamp: "2026-05-31T10:30:00Z"
+  locale: vi-85
+  classification: CORE_INFRASTRUCTURE
+  scope: hacedle/x/loader/gguf
+  version: "1.0.0"
+---
+
+# GGUF Loader Specification v1.0
+
+## Supported Quantization Types
+
+### Tier A (Recommended)
+- Q4_K_M: Default, balanced
+- Q5_K_M: Higher quality, better reasoning
+- Q6_K: Near FP16, excellent for coding
+
+### Tier B (Compact)
+- Q3_K_M: Low memory target
+- Q4_K_S, Q5_K_S: Small variants
+
+### Tier C (IQ Quant)
+- IQ2_K, IQ3_M, IQ4_XS: Ultra-low memory
+
+## EFC Definition
+EFC.Hacedle.Loader.GGUF:
+- inspect: Read header, metadata, tensor layout
+- mmap: Memory-map tensor arena
+- quant_route: Route based on quantization type
+- tensor_projection: Create TensorDescriptor
+- provider_dispatch: Dispatch to appropriate provider
+
+## Universal Loader ABI
+pub trait ModelLoader {
+    fn inspect() -> ModelMetadata;
+    fn mount() -> Result<ModelProjection>;
+    fn route() -> Result<ExecutionPlan>;
+}

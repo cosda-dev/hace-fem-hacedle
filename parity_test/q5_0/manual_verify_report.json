@@ -1,0 +1,9 @@
+{
+  "tensor": "blk.0.attn_q.weight",
+  "quant": "Q5_0",
+  "block_index": 0,
+  "max_abs_error": 0.45068359375,
+  "mean_abs_error": 0.1830902099609375,
+  "cosine_similarity": -0.707717264641526,
+  "status": "FAIL"
+}

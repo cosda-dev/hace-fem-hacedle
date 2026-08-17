@@ -1,0 +1,12 @@
+{
+  "operator_id": "13_gate_proj",
+  "layer_id": 0,
+  "tensor_shape": [
+    4864
+  ],
+  "dtype": "f32",
+  "sha256": "40eb5585db61e5445cf486867934a210bede4e8dd7d64d5ea0b10e74af1207d2",
+  "min": -4.093864440917969,
+  "max": 1.8109263181686401,
+  "mean": -0.03956320881843567
+}

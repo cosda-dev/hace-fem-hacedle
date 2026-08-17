@@ -1,0 +1,13 @@
+{
+  "operator_id": "02_attn_norm_post",
+  "layer_id": 0,
+  "tensor_shape": [
+    896
+  ],
+  "dtype": "f32",
+  "sha256": "4c22cebbabeb100147eb088c4bbe12e97c89dc288db6f0fb39488b6157d2961a",
+  "min": -0.7539742588996887,
+  "max": 0.5617942214012146,
+  "mean": -0.0050696125254035,
+  "std": 0.09601852297782898
+}

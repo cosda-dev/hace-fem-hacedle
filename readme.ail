@@ -1,0 +1,30 @@
+---
+header:
+  id: RC://hace.infra.refine.hacedle.readme.v1
+  intent: DECLARE_SCHEMA
+  status: DRAFT
+  locale: vi-85
+  version: "0.1.0"
+  authority: AS//hace.infra.refine
+  updated_at: "2026-03-17"
+---
+
+# Hacedle (Refine Layer)
+
+## Purpose
+
+Refined inference core derived from Candle, designed for authority-aware,
+resource-constrained execution in PI-Zeus.
+
+## Scope (Phase 0)
+
+- Tensor core extraction
+- Quantized blob loading (GGUF/Safetensors)
+- no_std/alloc-constrained compatibility
+
+## Non-Goals (Phase 0)
+
+- Full feature parity with Candle
+- Dynamic shape inference across arbitrary backends
+---
+**Status:** DRAFT

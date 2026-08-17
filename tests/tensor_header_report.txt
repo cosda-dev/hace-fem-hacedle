@@ -1,0 +1,344 @@
+GGUF Tensor Header Report
+path=D:\host\llama-models\Qwen2.5-Coder-7B-Instruct-Q4_K_M.gguf
+tensor_count=339
+tensor_directory_start=5935005
+
+Tensor[0] hdr_offset=5935005 name=token_embd.weight n_dims=2 dims=[3584, 152064] ggml_type=12 offset=0
+Tensor[1] hdr_offset=5935062 name=blk.0.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=306561024
+Tensor[2] hdr_offset=5935116 name=blk.0.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=306575360
+Tensor[3] hdr_offset=5935177 name=blk.0.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=362270720
+Tensor[4] hdr_offset=5935238 name=blk.0.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=400461824
+Tensor[5] hdr_offset=5935297 name=blk.0.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=438652928
+Tensor[6] hdr_offset=5935350 name=blk.0.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=438667264
+Tensor[7] hdr_offset=5935399 name=blk.0.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=438669312
+Tensor[8] hdr_offset=5935458 name=blk.0.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=439701504
+Tensor[9] hdr_offset=5935522 name=blk.0.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=446926848
+Tensor[10] hdr_offset=5935571 name=blk.0.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=446941184
+Tensor[11] hdr_offset=5935630 name=blk.0.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=454166528
+Tensor[12] hdr_offset=5935679 name=blk.0.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=454168576
+Tensor[13] hdr_offset=5935738 name=blk.1.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=455673856
+Tensor[14] hdr_offset=5935792 name=blk.1.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=455688192
+Tensor[15] hdr_offset=5935853 name=blk.1.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=511383552
+Tensor[16] hdr_offset=5935914 name=blk.1.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=549574656
+Tensor[17] hdr_offset=5935973 name=blk.1.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=587765760
+Tensor[18] hdr_offset=5936026 name=blk.1.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=587780096
+Tensor[19] hdr_offset=5936075 name=blk.1.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=587782144
+Tensor[20] hdr_offset=5936134 name=blk.1.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=588814336
+Tensor[21] hdr_offset=5936198 name=blk.1.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=596039680
+Tensor[22] hdr_offset=5936247 name=blk.1.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=596054016
+Tensor[23] hdr_offset=5936306 name=blk.1.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=603279360
+Tensor[24] hdr_offset=5936355 name=blk.1.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=603281408
+Tensor[25] hdr_offset=5936414 name=blk.2.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=604786688
+Tensor[26] hdr_offset=5936468 name=blk.2.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=604801024
+Tensor[27] hdr_offset=5936529 name=blk.2.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=660496384
+Tensor[28] hdr_offset=5936590 name=blk.2.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=698687488
+Tensor[29] hdr_offset=5936649 name=blk.2.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=736878592
+Tensor[30] hdr_offset=5936702 name=blk.2.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=736892928
+Tensor[31] hdr_offset=5936751 name=blk.2.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=736894976
+Tensor[32] hdr_offset=5936810 name=blk.2.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=737927168
+Tensor[33] hdr_offset=5936874 name=blk.2.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=745152512
+Tensor[34] hdr_offset=5936923 name=blk.2.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=745166848
+Tensor[35] hdr_offset=5936982 name=blk.2.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=752392192
+Tensor[36] hdr_offset=5937031 name=blk.2.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=752394240
+Tensor[37] hdr_offset=5937090 name=blk.3.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=753899520
+Tensor[38] hdr_offset=5937144 name=blk.3.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=753913856
+Tensor[39] hdr_offset=5937205 name=blk.3.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=792104960
+Tensor[40] hdr_offset=5937266 name=blk.3.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=830296064
+Tensor[41] hdr_offset=5937325 name=blk.3.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=868487168
+Tensor[42] hdr_offset=5937378 name=blk.3.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=868501504
+Tensor[43] hdr_offset=5937427 name=blk.3.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=868503552
+Tensor[44] hdr_offset=5937486 name=blk.3.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=869535744
+Tensor[45] hdr_offset=5937550 name=blk.3.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=876761088
+Tensor[46] hdr_offset=5937599 name=blk.3.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=876775424
+Tensor[47] hdr_offset=5937658 name=blk.3.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=884000768
+Tensor[48] hdr_offset=5937707 name=blk.3.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=884002816
+Tensor[49] hdr_offset=5937766 name=blk.4.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=885035008
+Tensor[50] hdr_offset=5937820 name=blk.4.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=885049344
+Tensor[51] hdr_offset=5937881 name=blk.4.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=923240448
+Tensor[52] hdr_offset=5937942 name=blk.4.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=961431552
+Tensor[53] hdr_offset=5938001 name=blk.4.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=999622656
+Tensor[54] hdr_offset=5938054 name=blk.4.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=999636992
+Tensor[55] hdr_offset=5938103 name=blk.4.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=999639040
+Tensor[56] hdr_offset=5938162 name=blk.4.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1000671232
+Tensor[57] hdr_offset=5938226 name=blk.4.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=1007896576
+Tensor[58] hdr_offset=5938275 name=blk.4.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1007910912
+Tensor[59] hdr_offset=5938334 name=blk.4.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=1015136256
+Tensor[60] hdr_offset=5938383 name=blk.4.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1015138304
+Tensor[61] hdr_offset=5938442 name=blk.5.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1016170496
+Tensor[62] hdr_offset=5938496 name=blk.5.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=1016184832
+Tensor[63] hdr_offset=5938557 name=blk.5.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1071880192
+Tensor[64] hdr_offset=5938618 name=blk.5.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1110071296
+Tensor[65] hdr_offset=5938677 name=blk.5.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1148262400
+Tensor[66] hdr_offset=5938730 name=blk.5.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=1148276736
+Tensor[67] hdr_offset=5938779 name=blk.5.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1148278784
+Tensor[68] hdr_offset=5938838 name=blk.5.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1149310976
+Tensor[69] hdr_offset=5938902 name=blk.5.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=1156536320
+Tensor[70] hdr_offset=5938951 name=blk.5.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1156550656
+Tensor[71] hdr_offset=5939010 name=blk.5.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=1163776000
+Tensor[72] hdr_offset=5939059 name=blk.5.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=1163778048
+Tensor[73] hdr_offset=5939118 name=blk.6.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1165283328
+Tensor[74] hdr_offset=5939172 name=blk.6.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=1165297664
+Tensor[75] hdr_offset=5939233 name=blk.6.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1203488768
+Tensor[76] hdr_offset=5939294 name=blk.6.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1241679872
+Tensor[77] hdr_offset=5939353 name=blk.6.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1279870976
+Tensor[78] hdr_offset=5939406 name=blk.6.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=1279885312
+Tensor[79] hdr_offset=5939455 name=blk.6.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1279887360
+Tensor[80] hdr_offset=5939514 name=blk.6.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1280919552
+Tensor[81] hdr_offset=5939578 name=blk.6.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=1288144896
+Tensor[82] hdr_offset=5939627 name=blk.6.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1288159232
+Tensor[83] hdr_offset=5939686 name=blk.6.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=1295384576
+Tensor[84] hdr_offset=5939735 name=blk.6.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1295386624
+Tensor[85] hdr_offset=5939794 name=blk.7.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1296418816
+Tensor[86] hdr_offset=5939848 name=blk.7.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=1296433152
+Tensor[87] hdr_offset=5939909 name=blk.7.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1334624256
+Tensor[88] hdr_offset=5939970 name=blk.7.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1372815360
+Tensor[89] hdr_offset=5940029 name=blk.7.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1411006464
+Tensor[90] hdr_offset=5940082 name=blk.7.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=1411020800
+Tensor[91] hdr_offset=5940131 name=blk.7.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1411022848
+Tensor[92] hdr_offset=5940190 name=blk.7.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1412055040
+Tensor[93] hdr_offset=5940254 name=blk.7.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=1419280384
+Tensor[94] hdr_offset=5940303 name=blk.7.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1419294720
+Tensor[95] hdr_offset=5940362 name=blk.7.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=1426520064
+Tensor[96] hdr_offset=5940411 name=blk.7.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1426522112
+Tensor[97] hdr_offset=5940470 name=blk.8.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=1427554304
+Tensor[98] hdr_offset=5940519 name=blk.8.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1427556352
+Tensor[99] hdr_offset=5940578 name=blk.8.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1428588544
+Tensor[100] hdr_offset=5940642 name=blk.8.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=1435813888
+Tensor[101] hdr_offset=5940691 name=blk.8.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1435828224
+Tensor[102] hdr_offset=5940750 name=blk.8.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=1443053568
+Tensor[103] hdr_offset=5940799 name=blk.8.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=1443055616
+Tensor[104] hdr_offset=5940858 name=blk.10.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1444560896
+Tensor[105] hdr_offset=5940913 name=blk.10.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=1444575232
+Tensor[106] hdr_offset=5940975 name=blk.10.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1500270592
+Tensor[107] hdr_offset=5941037 name=blk.10.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1538461696
+Tensor[108] hdr_offset=5941097 name=blk.10.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1576652800
+Tensor[109] hdr_offset=5941151 name=blk.10.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=1576667136
+Tensor[110] hdr_offset=5941201 name=blk.10.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1576669184
+Tensor[111] hdr_offset=5941261 name=blk.10.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1577701376
+Tensor[112] hdr_offset=5941326 name=blk.10.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=1584926720
+Tensor[113] hdr_offset=5941376 name=blk.10.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1584941056
+Tensor[114] hdr_offset=5941436 name=blk.10.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=1592166400
+Tensor[115] hdr_offset=5941486 name=blk.10.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1592168448
+Tensor[116] hdr_offset=5941546 name=blk.11.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1593200640
+Tensor[117] hdr_offset=5941601 name=blk.11.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=1593214976
+Tensor[118] hdr_offset=5941663 name=blk.11.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1631406080
+Tensor[119] hdr_offset=5941725 name=blk.11.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1669597184
+Tensor[120] hdr_offset=5941785 name=blk.11.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1707788288
+Tensor[121] hdr_offset=5941839 name=blk.11.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=1707802624
+Tensor[122] hdr_offset=5941889 name=blk.11.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1707804672
+Tensor[123] hdr_offset=5941949 name=blk.11.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1708836864
+Tensor[124] hdr_offset=5942014 name=blk.11.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=1716062208
+Tensor[125] hdr_offset=5942064 name=blk.11.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1716076544
+Tensor[126] hdr_offset=5942124 name=blk.11.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=1723301888
+Tensor[127] hdr_offset=5942174 name=blk.11.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1723303936
+Tensor[128] hdr_offset=5942234 name=blk.12.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1724336128
+Tensor[129] hdr_offset=5942289 name=blk.12.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=1724350464
+Tensor[130] hdr_offset=5942351 name=blk.12.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1762541568
+Tensor[131] hdr_offset=5942413 name=blk.12.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1800732672
+Tensor[132] hdr_offset=5942473 name=blk.12.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1838923776
+Tensor[133] hdr_offset=5942527 name=blk.12.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=1838938112
+Tensor[134] hdr_offset=5942577 name=blk.12.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1838940160
+Tensor[135] hdr_offset=5942637 name=blk.12.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1839972352
+Tensor[136] hdr_offset=5942702 name=blk.12.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=1847197696
+Tensor[137] hdr_offset=5942752 name=blk.12.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1847212032
+Tensor[138] hdr_offset=5942812 name=blk.12.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=1854437376
+Tensor[139] hdr_offset=5942862 name=blk.12.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=1854439424
+Tensor[140] hdr_offset=5942922 name=blk.13.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1855944704
+Tensor[141] hdr_offset=5942977 name=blk.13.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=1855959040
+Tensor[142] hdr_offset=5943039 name=blk.13.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1911654400
+Tensor[143] hdr_offset=5943101 name=blk.13.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=1949845504
+Tensor[144] hdr_offset=5943161 name=blk.13.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=1988036608
+Tensor[145] hdr_offset=5943215 name=blk.13.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=1988050944
+Tensor[146] hdr_offset=5943265 name=blk.13.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=1988052992
+Tensor[147] hdr_offset=5943325 name=blk.13.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1989085184
+Tensor[148] hdr_offset=5943390 name=blk.13.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=1996310528
+Tensor[149] hdr_offset=5943440 name=blk.13.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=1996324864
+Tensor[150] hdr_offset=5943500 name=blk.13.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=2003550208
+Tensor[151] hdr_offset=5943550 name=blk.13.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=2003552256
+Tensor[152] hdr_offset=5943610 name=blk.14.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2004584448
+Tensor[153] hdr_offset=5943665 name=blk.14.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=2004598784
+Tensor[154] hdr_offset=5943727 name=blk.14.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2042789888
+Tensor[155] hdr_offset=5943789 name=blk.14.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2080980992
+Tensor[156] hdr_offset=5943849 name=blk.14.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2119172096
+Tensor[157] hdr_offset=5943903 name=blk.14.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=2119186432
+Tensor[158] hdr_offset=5943953 name=blk.14.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=2119188480
+Tensor[159] hdr_offset=5944013 name=blk.14.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2120220672
+Tensor[160] hdr_offset=5944078 name=blk.14.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=2127446016
+Tensor[161] hdr_offset=5944128 name=blk.14.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2127460352
+Tensor[162] hdr_offset=5944188 name=blk.14.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=2134685696
+Tensor[163] hdr_offset=5944238 name=blk.14.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=2134687744
+Tensor[164] hdr_offset=5944298 name=blk.15.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2135719936
+Tensor[165] hdr_offset=5944353 name=blk.15.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=2135734272
+Tensor[166] hdr_offset=5944415 name=blk.15.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2173925376
+Tensor[167] hdr_offset=5944477 name=blk.15.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2212116480
+Tensor[168] hdr_offset=5944537 name=blk.15.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2250307584
+Tensor[169] hdr_offset=5944591 name=blk.15.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=2250321920
+Tensor[170] hdr_offset=5944641 name=blk.15.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=2250323968
+Tensor[171] hdr_offset=5944701 name=blk.15.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2251356160
+Tensor[172] hdr_offset=5944766 name=blk.15.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=2258581504
+Tensor[173] hdr_offset=5944816 name=blk.15.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2258595840
+Tensor[174] hdr_offset=5944876 name=blk.15.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=2265821184
+Tensor[175] hdr_offset=5944926 name=blk.15.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=2265823232
+Tensor[176] hdr_offset=5944986 name=blk.16.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2267328512
+Tensor[177] hdr_offset=5945041 name=blk.16.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=2267342848
+Tensor[178] hdr_offset=5945103 name=blk.16.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2323038208
+Tensor[179] hdr_offset=5945165 name=blk.16.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2361229312
+Tensor[180] hdr_offset=5945225 name=blk.16.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2399420416
+Tensor[181] hdr_offset=5945279 name=blk.16.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=2399434752
+Tensor[182] hdr_offset=5945329 name=blk.16.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=2399436800
+Tensor[183] hdr_offset=5945389 name=blk.16.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2400468992
+Tensor[184] hdr_offset=5945454 name=blk.16.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=2407694336
+Tensor[185] hdr_offset=5945504 name=blk.16.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2407708672
+Tensor[186] hdr_offset=5945564 name=blk.16.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=2414934016
+Tensor[187] hdr_offset=5945614 name=blk.16.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=2414936064
+Tensor[188] hdr_offset=5945674 name=blk.17.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2415968256
+Tensor[189] hdr_offset=5945729 name=blk.17.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=2415982592
+Tensor[190] hdr_offset=5945791 name=blk.17.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2454173696
+Tensor[191] hdr_offset=5945853 name=blk.17.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2492364800
+Tensor[192] hdr_offset=5945913 name=blk.17.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2530555904
+Tensor[193] hdr_offset=5945967 name=blk.17.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=2530570240
+Tensor[194] hdr_offset=5946017 name=blk.17.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=2530572288
+Tensor[195] hdr_offset=5946077 name=blk.17.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2531604480
+Tensor[196] hdr_offset=5946142 name=blk.17.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=2538829824
+Tensor[197] hdr_offset=5946192 name=blk.17.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2538844160
+Tensor[198] hdr_offset=5946252 name=blk.17.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=2546069504
+Tensor[199] hdr_offset=5946302 name=blk.17.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=2546071552
+Tensor[200] hdr_offset=5946362 name=blk.18.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2547103744
+Tensor[201] hdr_offset=5946424 name=blk.18.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2585294848
+Tensor[202] hdr_offset=5946484 name=blk.18.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=2623485952
+Tensor[203] hdr_offset=5946534 name=blk.18.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=2623488000
+Tensor[204] hdr_offset=5946594 name=blk.18.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2624520192
+Tensor[205] hdr_offset=5946659 name=blk.18.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=2631745536
+Tensor[206] hdr_offset=5946709 name=blk.18.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2631759872
+Tensor[207] hdr_offset=5946769 name=blk.18.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=2638985216
+Tensor[208] hdr_offset=5946819 name=blk.18.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=2638987264
+Tensor[209] hdr_offset=5946879 name=blk.8.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2640492544
+Tensor[210] hdr_offset=5946933 name=blk.8.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=2640506880
+Tensor[211] hdr_offset=5946994 name=blk.8.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2678697984
+Tensor[212] hdr_offset=5947055 name=blk.8.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2716889088
+Tensor[213] hdr_offset=5947114 name=blk.8.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2755080192
+Tensor[214] hdr_offset=5947167 name=blk.9.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2755094528
+Tensor[215] hdr_offset=5947221 name=blk.9.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=2755108864
+Tensor[216] hdr_offset=5947282 name=blk.9.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2810804224
+Tensor[217] hdr_offset=5947343 name=blk.9.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2848995328
+Tensor[218] hdr_offset=5947402 name=blk.9.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2887186432
+Tensor[219] hdr_offset=5947455 name=blk.9.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=2887200768
+Tensor[220] hdr_offset=5947504 name=blk.9.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=2887202816
+Tensor[221] hdr_offset=5947563 name=blk.9.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2888235008
+Tensor[222] hdr_offset=5947627 name=blk.9.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=2895460352
+Tensor[223] hdr_offset=5947676 name=blk.9.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=2895474688
+Tensor[224] hdr_offset=5947735 name=blk.9.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=2902700032
+Tensor[225] hdr_offset=5947784 name=blk.9.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=2902702080
+Tensor[226] hdr_offset=5947843 name=blk.18.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2903734272
+Tensor[227] hdr_offset=5947898 name=blk.18.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=2903748608
+Tensor[228] hdr_offset=5947960 name=blk.18.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2941939712
+Tensor[229] hdr_offset=5948014 name=blk.19.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=2941954048
+Tensor[230] hdr_offset=5948069 name=blk.19.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=2941968384
+Tensor[231] hdr_offset=5948131 name=blk.19.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=2980159488
+Tensor[232] hdr_offset=5948193 name=blk.19.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3018350592
+Tensor[233] hdr_offset=5948253 name=blk.19.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3056541696
+Tensor[234] hdr_offset=5948307 name=blk.19.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=3056556032
+Tensor[235] hdr_offset=5948357 name=blk.19.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=3056558080
+Tensor[236] hdr_offset=5948417 name=blk.19.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3057590272
+Tensor[237] hdr_offset=5948482 name=blk.19.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=3064815616
+Tensor[238] hdr_offset=5948532 name=blk.19.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3064829952
+Tensor[239] hdr_offset=5948592 name=blk.19.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=3072055296
+Tensor[240] hdr_offset=5948642 name=blk.19.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=3072057344
+Tensor[241] hdr_offset=5948702 name=blk.20.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3073089536
+Tensor[242] hdr_offset=5948757 name=blk.20.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=3073103872
+Tensor[243] hdr_offset=5948819 name=blk.20.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3128799232
+Tensor[244] hdr_offset=5948881 name=blk.20.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3166990336
+Tensor[245] hdr_offset=5948941 name=blk.20.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3205181440
+Tensor[246] hdr_offset=5948995 name=blk.20.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=3205195776
+Tensor[247] hdr_offset=5949045 name=blk.20.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=3205197824
+Tensor[248] hdr_offset=5949105 name=blk.20.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3206230016
+Tensor[249] hdr_offset=5949170 name=blk.20.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=3213455360
+Tensor[250] hdr_offset=5949220 name=blk.20.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3213469696
+Tensor[251] hdr_offset=5949280 name=blk.20.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=3220695040
+Tensor[252] hdr_offset=5949330 name=blk.20.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=3220697088
+Tensor[253] hdr_offset=5949390 name=blk.21.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3222202368
+Tensor[254] hdr_offset=5949445 name=blk.21.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=3222216704
+Tensor[255] hdr_offset=5949507 name=blk.21.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3260407808
+Tensor[256] hdr_offset=5949569 name=blk.21.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3298598912
+Tensor[257] hdr_offset=5949629 name=blk.21.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3336790016
+Tensor[258] hdr_offset=5949683 name=blk.21.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=3336804352
+Tensor[259] hdr_offset=5949733 name=blk.21.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=3336806400
+Tensor[260] hdr_offset=5949793 name=blk.21.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3337838592
+Tensor[261] hdr_offset=5949858 name=blk.21.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=3345063936
+Tensor[262] hdr_offset=5949908 name=blk.21.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3345078272
+Tensor[263] hdr_offset=5949968 name=blk.21.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=3352303616
+Tensor[264] hdr_offset=5950018 name=blk.21.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=3352305664
+Tensor[265] hdr_offset=5950078 name=blk.22.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3353337856
+Tensor[266] hdr_offset=5950133 name=blk.22.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=12 offset=3353352192
+Tensor[267] hdr_offset=5950195 name=blk.22.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3391543296
+Tensor[268] hdr_offset=5950257 name=blk.22.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3429734400
+Tensor[269] hdr_offset=5950317 name=blk.22.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3467925504
+Tensor[270] hdr_offset=5950371 name=blk.22.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=3467939840
+Tensor[271] hdr_offset=5950421 name=blk.22.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=3467941888
+Tensor[272] hdr_offset=5950481 name=blk.22.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3468974080
+Tensor[273] hdr_offset=5950546 name=blk.22.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=3476199424
+Tensor[274] hdr_offset=5950596 name=blk.22.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3476213760
+Tensor[275] hdr_offset=5950656 name=blk.22.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=3483439104
+Tensor[276] hdr_offset=5950706 name=blk.22.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=3483441152
+Tensor[277] hdr_offset=5950766 name=blk.23.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3484473344
+Tensor[278] hdr_offset=5950821 name=blk.23.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=3484487680
+Tensor[279] hdr_offset=5950883 name=blk.23.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3540183040
+Tensor[280] hdr_offset=5950945 name=blk.23.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3578374144
+Tensor[281] hdr_offset=5951005 name=blk.23.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3616565248
+Tensor[282] hdr_offset=5951059 name=blk.23.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=3616579584
+Tensor[283] hdr_offset=5951109 name=blk.23.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=3616581632
+Tensor[284] hdr_offset=5951169 name=blk.23.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3617613824
+Tensor[285] hdr_offset=5951234 name=blk.23.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=3624839168
+Tensor[286] hdr_offset=5951284 name=blk.23.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3624853504
+Tensor[287] hdr_offset=5951344 name=blk.23.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=3632078848
+Tensor[288] hdr_offset=5951394 name=blk.23.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=3632080896
+Tensor[289] hdr_offset=5951454 name=blk.24.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3633586176
+Tensor[290] hdr_offset=5951509 name=blk.24.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=3633600512
+Tensor[291] hdr_offset=5951571 name=blk.24.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3689295872
+Tensor[292] hdr_offset=5951633 name=blk.24.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3727486976
+Tensor[293] hdr_offset=5951693 name=blk.24.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3765678080
+Tensor[294] hdr_offset=5951747 name=blk.24.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=3765692416
+Tensor[295] hdr_offset=5951797 name=blk.24.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=3765694464
+Tensor[296] hdr_offset=5951857 name=blk.24.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3766726656
+Tensor[297] hdr_offset=5951922 name=blk.24.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=3773952000
+Tensor[298] hdr_offset=5951972 name=blk.24.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3773966336
+Tensor[299] hdr_offset=5952032 name=blk.24.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=3781191680
+Tensor[300] hdr_offset=5952082 name=blk.24.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=3781193728
+Tensor[301] hdr_offset=5952142 name=blk.25.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3782699008
+Tensor[302] hdr_offset=5952197 name=blk.25.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=3782713344
+Tensor[303] hdr_offset=5952259 name=blk.25.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3838408704
+Tensor[304] hdr_offset=5952321 name=blk.25.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3876599808
+Tensor[305] hdr_offset=5952381 name=blk.25.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3914790912
+Tensor[306] hdr_offset=5952435 name=blk.25.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=3914805248
+Tensor[307] hdr_offset=5952485 name=blk.25.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=3914807296
+Tensor[308] hdr_offset=5952545 name=blk.25.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3915839488
+Tensor[309] hdr_offset=5952610 name=blk.25.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=3923064832
+Tensor[310] hdr_offset=5952660 name=blk.25.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=3923079168
+Tensor[311] hdr_offset=5952720 name=blk.25.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=3930304512
+Tensor[312] hdr_offset=5952770 name=blk.25.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=3930306560
+Tensor[313] hdr_offset=5952830 name=blk.26.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=3931811840
+Tensor[314] hdr_offset=5952885 name=blk.26.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=3931826176
+Tensor[315] hdr_offset=5952947 name=blk.26.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=3987521536
+Tensor[316] hdr_offset=5953009 name=blk.26.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=4025712640
+Tensor[317] hdr_offset=5953069 name=blk.26.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=4063903744
+Tensor[318] hdr_offset=5953123 name=blk.26.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=4063918080
+Tensor[319] hdr_offset=5953173 name=blk.26.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=4063920128
+Tensor[320] hdr_offset=5953233 name=blk.26.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=4064952320
+Tensor[321] hdr_offset=5953298 name=blk.26.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=4072177664
+Tensor[322] hdr_offset=5953348 name=blk.26.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=4072192000
+Tensor[323] hdr_offset=5953408 name=blk.26.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=4079417344
+Tensor[324] hdr_offset=5953458 name=blk.26.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=4079419392
+Tensor[325] hdr_offset=5953518 name=blk.27.attn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=4080924672
+Tensor[326] hdr_offset=5953573 name=blk.27.ffn_down.weight n_dims=2 dims=[18944, 3584] ggml_type=14 offset=4080939008
+Tensor[327] hdr_offset=5953635 name=blk.27.ffn_gate.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=4136634368
+Tensor[328] hdr_offset=5953697 name=blk.27.ffn_up.weight n_dims=2 dims=[3584, 18944] ggml_type=12 offset=4174825472
+Tensor[329] hdr_offset=5953757 name=blk.27.ffn_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=4213016576
+Tensor[330] hdr_offset=5953811 name=blk.27.attn_k.bias n_dims=1 dims=[512] ggml_type=0 offset=4213030912
+Tensor[331] hdr_offset=5953861 name=blk.27.attn_k.weight n_dims=2 dims=[3584, 512] ggml_type=12 offset=4213032960
+Tensor[332] hdr_offset=5953921 name=blk.27.attn_output.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=4214065152
+Tensor[333] hdr_offset=5953986 name=blk.27.attn_q.bias n_dims=1 dims=[3584] ggml_type=0 offset=4221290496
+Tensor[334] hdr_offset=5954036 name=blk.27.attn_q.weight n_dims=2 dims=[3584, 3584] ggml_type=12 offset=4221304832
+Tensor[335] hdr_offset=5954096 name=blk.27.attn_v.bias n_dims=1 dims=[512] ggml_type=0 offset=4228530176
+Tensor[336] hdr_offset=5954146 name=blk.27.attn_v.weight n_dims=2 dims=[3584, 512] ggml_type=14 offset=4228532224
+Tensor[337] hdr_offset=5954206 name=output_norm.weight n_dims=1 dims=[3584] ggml_type=0 offset=4230037504
+Tensor[338] hdr_offset=5954256 name=output.weight n_dims=2 dims=[3584, 152064] ggml_type=14 offset=4230051840

@@ -1,0 +1,25 @@
+# L6: LoRA Overlay Runtime Truth
+# Verification: base_weight + delta = effective_weight
+
+overlay_truth:
+  base_model: qwen2.5-0.5b
+  adapter_format: gguf
+  overlay_method: runtime
+  mutation: false
+  
+test_vectors:
+  - tensor: blk.0.attn_q.weight
+    base_shape: [896, 896]
+    lora_a_shape: [64, 896]
+    lora_b_shape: [896, 64]
+    expected_delta: "PENDING_RUNTIME"
+    actual_delta: "PENDING_RUNTIME"
+    max_abs_error: "PENDING_RUNTIME"
+    
+runtime_verification:
+  - test: effective_weight_correct
+    status: PENDING
+  - test: no_mutation_base
+    status: PENDING
+  - test: multi_adapter_stack
+    status: PENDING

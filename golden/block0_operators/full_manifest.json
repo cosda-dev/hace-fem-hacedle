@@ -1,0 +1,52 @@
+{
+  "operators": [
+    {
+      "operator_id": "01_attn_rmsnorm",
+      "layer_id": 0,
+      "tensor_shape": [
+        896
+      ],
+      "dtype": "f32",
+      "sha256": "4c22cebbabeb100147eb088c4bbe12e97c89dc288db6f0fb39488b6157d2961a",
+      "min": -0.7539742588996887,
+      "max": 0.5617942214012146,
+      "mean": -0.0050696125254035
+    },
+    {
+      "operator_id": "02_q_proj",
+      "layer_id": 0,
+      "tensor_shape": [
+        896
+      ],
+      "dtype": "f32",
+      "sha256": "0680235e20743be100e326917a64c8d0ce134a36ebefbe462d8a7453298a624e",
+      "min": -79.42110443115234,
+      "max": 48.25457000732422,
+      "mean": -0.13398852944374084
+    },
+    {
+      "operator_id": "03_k_proj",
+      "layer_id": 0,
+      "tensor_shape": [
+        128
+      ],
+      "dtype": "f32",
+      "sha256": "cb11323230819c96ad4d3f7e029d31ee4b484ed3afb0334d0af084e989c68ab2",
+      "min": -129.7901611328125,
+      "max": 120.56596374511719,
+      "mean": 3.8915023803710938
+    },
+    {
+      "operator_id": "04_v_proj",
+      "layer_id": 0,
+      "tensor_shape": [
+        128
+      ],
+      "dtype": "f32",
+      "sha256": "dc718bebb0013e7f2215af5495921b557cca789b39436b6648d742e0394a8633",
+      "min": -0.08889104425907135,
+      "max": 0.12167346477508545,
+      "mean": 0.0028777115512639284
+    }
+  ]
+}

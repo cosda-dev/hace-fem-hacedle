@@ -1,0 +1,16 @@
+{
+  "operator_id": "08_softmax",
+  "layer_id": 0,
+  "tensor_shape": [
+    196
+  ],
+  "dtype": "f32",
+  "min": 0.0,
+  "max": 0.1428571492433548,
+  "mean": 0.0714285746216774,
+  "stats": {
+    "sum_max_deviation": 0.0,
+    "entropy_mean": 1.9459103345870972,
+    "entropy_std": 1.1920928955078125e-07
+  }
+}

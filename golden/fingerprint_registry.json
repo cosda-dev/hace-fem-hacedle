@@ -1,0 +1,77 @@
+{
+  "tensors": {
+    "blk_0_attn_k_weight": {
+      "shape": [
+        114688
+      ],
+      "dtype": "f32",
+      "bytes": 458752,
+      "sha256": "395d093567d49943"
+    },
+    "blk_0_attn_norm_weight": {
+      "shape": [
+        896
+      ],
+      "dtype": "f32",
+      "bytes": 3584,
+      "sha256": "32c7d51cd0958f1f"
+    },
+    "blk_0_attn_output_weight": {
+      "shape": [
+        802816
+      ],
+      "dtype": "f32",
+      "bytes": 3211264,
+      "sha256": "8e35d13057a46aa4"
+    },
+    "blk_0_attn_q_weight": {
+      "shape": [
+        802816
+      ],
+      "dtype": "f32",
+      "bytes": 3211264,
+      "sha256": "f719c18790d4464e"
+    },
+    "blk_0_attn_v_weight": {
+      "shape": [
+        114688
+      ],
+      "dtype": "f32",
+      "bytes": 458752,
+      "sha256": "869aa964fa62443c"
+    },
+    "blk_0_ffn_down_weight": {
+      "shape": [
+        4358144
+      ],
+      "dtype": "f32",
+      "bytes": 17432576,
+      "sha256": "6e99608676f8ab3f"
+    },
+    "blk_0_ffn_gate_weight": {
+      "shape": [
+        4358144
+      ],
+      "dtype": "f32",
+      "bytes": 17432576,
+      "sha256": "b516f0a6800405f3"
+    },
+    "blk_0_ffn_norm_weight": {
+      "shape": [
+        896
+      ],
+      "dtype": "f32",
+      "bytes": 3584,
+      "sha256": "b59b779c42d44b5c"
+    },
+    "blk_0_ffn_up_weight": {
+      "shape": [
+        4358144
+      ],
+      "dtype": "f32",
+      "bytes": 17432576,
+      "sha256": "dbf8d4e4d7d4c088"
+    }
+  },
+  "created": "2025-06-02"
+}

@@ -1,0 +1,30 @@
+# LoRA Adapter Registry - Brain Overlay Support
+adapters:
+  - id: knowledge_v1
+    base_model: qwen2.5-0.5b
+    path: "adapters/knowledge_v1.gguf"
+    rank: 64
+    alpha: 128
+    targets:
+      - blk.0.attn_q.weight
+      - blk.0.attn_v.weight
+      - blk.0.ffn_up.weight
+    sha256: "PENDING_RUNTIME"
+    
+  - id: coding_v1
+    base_model: qwen2.5-0.5b
+    path: "adapters/coding_v1.gguf"
+    rank: 128
+    alpha: 256
+    targets:
+      - blk.0.attn_q.weight
+      - blk.0.ffn_down.weight
+    sha256: "PENDING_RUNTIME"
+
+overlay_tensor:
+  struct: OverlayTensor
+  fields:
+    - base: Arc<Tensor>
+    - adapter: Option<Arc<LoraTensor>>
+    - scale: f32
+  runtime: base_weight + scale * (B @ A)

@@ -1,0 +1,12 @@
+{
+  "operator_id": "11_residual",
+  "layer_id": 0,
+  "tensor_shape": [
+    896
+  ],
+  "dtype": "f32",
+  "sha256": "abbee874b27afd70f21124c4a8265df8e1226fea197bd04fbce522628e4be782",
+  "min": -0.10465107858181,
+  "max": 0.24226883053779602,
+  "mean": 0.0011157082626596093
+}

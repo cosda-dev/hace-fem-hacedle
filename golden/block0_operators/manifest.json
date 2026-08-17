@@ -1,0 +1,8 @@
+{
+  "block0_operators": [
+    "01_input",
+    "02_attn_norm_post",
+    "02_attn_norm_weight",
+    "03_post_rmsnorm"
+  ]
+}

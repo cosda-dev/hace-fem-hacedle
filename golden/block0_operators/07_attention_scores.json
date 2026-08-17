@@ -1,0 +1,12 @@
+{
+  "operator_id": "07_attention_scores",
+  "layer_id": 0,
+  "tensor_shape": [
+    196
+  ],
+  "dtype": "f32",
+  "sha256": "834319beee932ff93a79c45de34f2c221a51cda0f49393a6929f313e2e807c89",
+  "min": -165.77304077148438,
+  "max": 1144.9864501953125,
+  "mean": 116.0606689453125
+}

@@ -1,0 +1,121 @@
+# B2: Brain Execution Graph - DAG Truth
+# SHA256 sẽ được sinh tự động khi chạy runtime
+
+execution_dag:
+  version: "1.0"
+  model: "qwen2.5-0.5b"
+  dag_sha256: "PENDING_RUNTIME"
+  
+  nodes:
+    # Phase 1: Attention
+    - id: input
+      operator: passthrough
+      inputs: [embedding]
+      outputs: [hidden]
+      
+    - id: attn_norm
+      operator: rmsnorm
+      inputs: [hidden]
+      outputs: [normed_hidden]
+      params:
+        eps: 1e-6
+        
+    - id: q_proj
+      operator: matmul
+      inputs: [normed_hidden, q_weight, q_bias]
+      outputs: [q]
+      params:
+        transpose_weights: true
+        
+    - id: k_proj
+      operator: matmul
+      inputs: [normed_hidden, k_weight, k_bias]
+      outputs: [k]
+      
+    - id: v_proj
+      operator: matmul
+      inputs: [normed_hidden, v_weight, v_bias]
+      outputs: [v]
+      
+    - id: rope
+      operator: rope
+      inputs: [q, k, position]
+      outputs: [q_rope, k_rope]
+      params:
+        theta: 1000000.0
+        pairwise: true
+        
+    - id: attention_scores
+      operator: matmul
+      inputs: [q_rope, k_rope_t]
+      outputs: [scores]
+      params:
+        scale: true
+        
+    - id: softmax
+      operator: softmax
+      inputs: [scores]
+      outputs: [attention_probs]
+      
+    - id: attention_output
+      operator: matmul
+      inputs: [attention_probs, v_expanded]
+      outputs: [attn_output]
+      
+    - id: o_proj
+      operator: matmul
+      inputs: [attn_output, o_weight, o_bias]
+      outputs: [attn_proj]
+      
+    - id: residual_1
+      operator: add
+      inputs: [hidden, attn_proj]
+      outputs: [post_attn]
+      
+    # Phase 2: FFN
+    - id: ffn_norm
+      operator: rmsnorm
+      inputs: [post_attn]
+      outputs: [ffn_normed]
+      
+    - id: gate_proj
+      operator: matmul
+      inputs: [ffn_normed, gate_weight, gate_bias]
+      outputs: [gate]
+      
+    - id: up_proj
+      operator: matmul
+      inputs: [ffn_normed, up_weight, up_bias]
+      outputs: [up]
+      
+    - id: silu
+      operator: silu
+      inputs: [gate]
+      outputs: [gate_silu]
+      
+    - id: gate_mul_up
+      operator: multiply
+      inputs: [gate_silu, up]
+      outputs: [ffn_intermediate]
+      
+    - id: down_proj
+      operator: matmul
+      inputs: [ffn_intermediate, down_weight, down_bias]
+      outputs: [ffn_output]
+      
+    - id: residual_2
+      operator: add
+      inputs: [post_attn, ffn_output]
+      outputs: [layer_output]
+
+# Runtime Contract
+runtime_contract:
+  golden_path: "golden/block0_operators/"
+  verification_mode: "fidelity"
+  
+  checks:
+    - shape_match
+    - dtype_match
+    - fingerprint_match
+    - cosine_similarity > 0.99999
+    - max_abs_error < 1e-6
